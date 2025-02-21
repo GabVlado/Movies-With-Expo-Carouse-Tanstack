@@ -9,11 +9,11 @@ export const upcomingMoviesAction = async() => {
 
         const movies = data.results.map(MovieMapper.fromTheMovieDBToMovie)
 
-        console.log('Mapped Movies:', movies);
+        //console.log('Mapped Movies:', movies);
         return movies;
 
     } catch (error) {
-        console.error('Error:', error)
+        //console.error('Error:', error)
         throw 'Cannot load now playing movies'
     }
 
